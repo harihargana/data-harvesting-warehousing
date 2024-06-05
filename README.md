@@ -1,6 +1,6 @@
 Youtube Data Harvesting & Warehousing 
 
-Overview
+Overview:
 This web application demonstrates how data could be harvested using Youtube Data v3 APIs and warehoused using MySQL database
 
 Workflows:
