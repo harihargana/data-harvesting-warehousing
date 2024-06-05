@@ -1,0 +1,16 @@
+{
+  "db": {
+    "project_id": "youtubechannelanalysis-423709",
+    "region":"us-central1",
+    "instance_name": "mysql-hg1",
+    "user":"ytd_mining_app",
+    "passwd":"cloudapp@123",
+    "type": "pymysql",
+    "name":"youtube"
+  },
+  "api":{
+    "key": "AIzaSyCbya9MlvCo-rpL2j_4a_yuS5Dz9raszfg",
+    "version":"v3",
+    "service_name": "youtube"
+  }
+}
