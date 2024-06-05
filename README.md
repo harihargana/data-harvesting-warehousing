@@ -1,18 +1,19 @@
 Youtube Data Harvesting & Warehousing 
+
 Overview
 This web application demonstrates how data could be harvested using Youtube Data v3 APIs and warehoused using MySQL database
 
-Workflows
-  Summary
+Workflows:
+  Summary:
     This screen helps you view basic summary of channels those are already warehoused in the MySQL DB
   
-  Collect
+  Collect:
     This screen allows users to review the details of a channel, which includes channel, playlist, comments and video information for that channel. It also allows the user to save the channel after reviewing.
  
-  Analyze
+  Analyze:
     This workflow allows users to view 10 predefined insights based on the warehoused information.
 
-Modules
+Modules:
 The solution is composed of the following modules:
   1. Web Application: This acts as a controller that implements UI workflows for Harvesting, Warehousing and Viewing Insights. This is built using Streamlit web application framework and deployed using a just in time hosting for demonstration
   2. Data Access Object (YtDao): This is a python library that is used by the web application to store and retrieve business objects. A MySQL database hosted in CCP is used for persisting objects.
@@ -20,12 +21,6 @@ The solution is composed of the following modules:
   4. DB Init (YtDbInit):  Manages MySQL cloud Instance and DB schema from a python environment such as Google Colab or Jupyter
   5. DB Connector(YtDbConnector): Handles management of DB connections from a python application to the ‘youtube’ DB that is hosted in the cloud. We use SQL Alchemy and Google Cloud SQL to achieve this 
   6. A tools library for commonly used application agnostic functions
-
-Solution Architecture
-
-
-
-
 
 Configuration:
 The configuration for DB connections and API connections must be present in a JSON file, with following format.
@@ -46,7 +41,7 @@ The configuration for DB connections and API connections must be present in a JS
   }
 }
 
-Prerequisites
+Prerequisites:
   1. A valid Google account
   2. Obtain an API  key to avail GCP Service APIs. Could be done via GCP Console
   3. Ensure that following GCP services are enabled - Cloud SQL, Cloud Instance, Cloud SQL Admin & YouTube Data API v3
